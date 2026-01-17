@@ -1,0 +1,72 @@
+/* Whole Skills Section */
+.skills {
+  padding: 80px 40px;        /* top-bottom | left-right */
+}
+
+/* Section Heading */
+.skills h2 {
+   text-align: center;
+  font-size: 34px;
+  margin-bottom: 30px;
+  color: #38bdf8;
+}
+
+/* Skills Container (MAIN FIX) */
+.skills-container {
+  max-width: 1200px;        /* content width control */
+  margin-left: 100px;       /* 👈 LEFT se RIGHT shift */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Skill Card */
+.skill-card {
+  background: #0b1220;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* Card Title */
+.skill-card h3 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+/* Skills List */
+.skill-card ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+}
+
+/* Skill Items */
+.skill-card ul li {
+  background: #060b17;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #fff;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.skill-card ul li:hover {
+  background: #1db954;
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .skills {
+    padding: 60px 20px;
+  }
+
+  .skills-container {
+    margin-left: 0;        /* 👈 mobile me center */
+  }
+}
